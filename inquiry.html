@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Inquiry — REDLINE IRON</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="inquiry.html">
+    <main id="main">
+        <header class="phead">
+            <div class="wrap">
+                <p class="num">Get in touch</p>
+                <h1>Inquiry.</h1>
+                <p class="lead">Book a tour, ask about coaching, or just say hi. We reply within a day.</p>
+            </div>
+        </header>
+        <section class="wrap sec split">
+            <form id="inq" novalidate>
+                <div class="ok" id="ok" role="status" hidden>✓ Looks good! Thanks for reaching out.</div>
+                <label>Full name<input name="name" required autocomplete="name" placeholder="Juan Dela Cruz"><small
+                        class="err"></small></label>
+                <label>Email<input type="email" name="email" required autocomplete="email"
+                        placeholder="you@example.com"><small class="err"></small></label>
+                <label>Phone number<input type="tel" name="phone" required autocomplete="tel"
+                        placeholder="0917 123 4567"><small class="err"></small></label>
+                <label>Inquiry type<select name="type" required>
+                        <option value="">Select one…</option>
+                        <option>Membership</option>
+                        <option>Personal Training</option>
+                        <option>Gym Tour</option>
+                        <option>Equipment</option>
+                        <option>General Inquiry</option>
+                    </select><small class="err"></small></label>
+                <div class="two"><label>Preferred visit date (optional)<input type="date"
+                            name="date"></label><label>Preferred time (optional)<input type="time" name="time"></label>
+                </div>
+                <label>Message<textarea name="message" rows="5" required
+                        placeholder="Tell us your goals, schedule, or questions…"></textarea><small
+                        class="err"></small></label>
+                <button class="btn" type="submit">Send inquiry</button>
+            </form>
+            <aside class="contact">
+                <h2>Find us</h2>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Forge Street, Imus, Cavite (placeholder)</p>
+                <p><i class="fa-solid fa-phone"></i> 0917 000 0000</p>
+                <p><i class="fa-solid fa-envelope"></i> hello@redlineiron.example</p>
+                <h3>Opening hours</h3>
+                <p>Mon–Fri: 5:00 AM – 11:00 PM<br>Sat–Sun: 6:00 AM – 10:00 PM</p>
+                <div class="social"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a
+                        href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#"
+                        aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></div>
+            </aside>
+        </section>
+    </main>
+</body>
+<script src="js/script.js" defer></script>
+
+</html>
